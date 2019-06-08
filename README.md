@@ -6,9 +6,11 @@ Bash scripts to rotate the touchscreen when the laptop screen is rotated
 
 Thanks to this [gist](https://gist.github.com/mildmojo/48e9025070a2ba40795c)
 
-I found I have a similar problem on my Dell5379 running Ubuntu. These scripts help fix it for now.
+I found I have a similar problem on my Dell5379 running Ubuntu.
 The laptop will automatically rotate the display correctly, but the touchscreen overlay stayed in
-it's default orientation. These scripts will rotate the touchscreen to match the display.
+it's default orientation.
+
+These scripts will rotate the touchscreen to match the display.
 
 ## Instructions
 
