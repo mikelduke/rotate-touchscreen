@@ -11,7 +11,8 @@ fi
 function do_rotate
 {
     logger "rotate-touchscreen.sh: Changing rotation to $2"
-# disable screen rotate, just want touchpad
+# disable screen rotate, just want to rotate touchpad
+# screen rotation already works in ubuntu
 #   xrandr --output $1 --rotate $2
 
   TRANSFORM='Coordinate Transformation Matrix'
