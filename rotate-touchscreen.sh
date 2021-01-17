@@ -10,10 +10,13 @@ fi
 
 function do_rotate
 {
-    logger "rotate-touchscreen.sh: Changing rotation to $2"
+# replace occurrences of 'bottom' from monitor-sensor with 'inverted'
+# as required by xrandr
+  ROTATE=${2/bottom/inverted}
+  logger "rotate-touchscreen.sh: Changing rotation to $ROTATE"
 # disable screen rotate, just want to rotate touchpad
 # screen rotation already works in ubuntu
-#   xrandr --output $1 --rotate $2
+# xrandr --output $1 --rotate $ROTATE
 
   TRANSFORM='Coordinate Transformation Matrix'
 
